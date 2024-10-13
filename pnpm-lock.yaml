@@ -34,7 +34,7 @@ importers:
         version: 1.65.0(vite@5.4.8(@types/node@22.7.5)(terser@5.34.1))
       '@tanstack/start':
         specifier: ^1.57.18
-        version: 1.65.0(@types/node@22.7.5)(ioredis@5.4.1)(magicast@0.3.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(terser@5.34.1)(vite@5.4.8(@types/node@22.7.5)(terser@5.34.1))
+        version: 1.66.0(@types/node@22.7.5)(ioredis@5.4.1)(magicast@0.3.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(terser@5.34.1)(vite@5.4.8(@types/node@22.7.5)(terser@5.34.1))
       app-root-path:
         specifier: ^3.1.0
         version: 3.1.0
@@ -1796,8 +1796,8 @@ packages:
     resolution: {integrity: sha512-ap9NFBRyWJo7Xdklad0Bg3LOZ+n9nwWTDOU5ix/ZzZfifNWp5OoHRSVveHqPm2UAHUVp2BCzUK6xbAxtaSjjnw==}
     engines: {node: '>=12'}
 
-  '@tanstack/start@1.65.0':
-    resolution: {integrity: sha512-2H+v3dNwJ2Mx/Rc/1D5btwiktEUsjiyV1ReDDbNa2xpTGEAKBnSVfE4A3pXm7/uGJsUJbBsG1Nl/zZ3YrYpf7A==}
+  '@tanstack/start@1.66.0':
+    resolution: {integrity: sha512-J3iIJC+IculY8g+qkOcO68CjRXTgInTYi7KrmNf1JwFjIDPKQkQR7TGGSS7UqPGhKy+UY/P80xpxewv5f7iT9A==}
     engines: {node: '>=12'}
     peerDependencies:
       react: '>=18.0.0 || >=19.0.0'
@@ -7055,7 +7055,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@tanstack/start@1.65.0(@types/node@22.7.5)(ioredis@5.4.1)(magicast@0.3.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(terser@5.34.1)(vite@5.4.8(@types/node@22.7.5)(terser@5.34.1))':
+  '@tanstack/start@1.66.0(@types/node@22.7.5)(ioredis@5.4.1)(magicast@0.3.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(terser@5.34.1)(vite@5.4.8(@types/node@22.7.5)(terser@5.34.1))':
     dependencies:
       '@tanstack/react-cross-context': 1.60.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@tanstack/react-router': 1.65.0(@tanstack/router-generator@1.65.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
