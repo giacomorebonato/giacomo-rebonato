@@ -34,7 +34,7 @@ importers:
         version: 1.76.0(vite@5.4.10(@types/node@22.7.9)(terser@5.36.0))
       '@tanstack/start':
         specifier: ^1.57.18
-        version: 1.76.1(@types/node@22.7.9)(ioredis@5.4.1)(magicast@0.3.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(terser@5.36.0)(vite@5.4.10(@types/node@22.7.9)(terser@5.36.0))
+        version: 1.76.2(@types/node@22.7.9)(ioredis@5.4.1)(magicast@0.3.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(terser@5.36.0)(vite@5.4.10(@types/node@22.7.9)(terser@5.36.0))
       app-root-path:
         specifier: ^3.1.0
         version: 3.1.0
@@ -1694,6 +1694,15 @@ packages:
       rollup:
         optional: true
 
+  '@rollup/pluginutils@5.1.3':
+    resolution: {integrity: sha512-Pnsb6f32CD2W3uCaLZIzDmeFyQ2b8UWMFI7xtwUezpcGBDVDW6y9XgAWIlARiGAo6eNF5FK5aQTr0LFyNyqq5A==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      rollup: ^1.20.0||^2.0.0||^3.0.0||^4.0.0
+    peerDependenciesMeta:
+      rollup:
+        optional: true
+
   '@rollup/rollup-android-arm-eabi@4.24.0':
     resolution: {integrity: sha512-Q6HJd7Y6xdB48x8ZNVDOqsbh2uByBhgK8PiQgPhwkIw/HC/YX5Ghq2mQY5sRMZWHb3VsFkWooUVOZHKr7DmDIA==}
     cpu: [arm]
@@ -1854,8 +1863,8 @@ packages:
     resolution: {integrity: sha512-ZWGlNqF7vAiEOMQxxFQvzzcc/MIcT2l1xBz5mkjzTR4rrsLumaTXd8++LPoGD57NmlaGncBkGkiTiDMWZn1cFw==}
     engines: {node: '>=12'}
 
-  '@tanstack/start@1.76.1':
-    resolution: {integrity: sha512-LJ4jXtG5/xha7pcnjGbnacDN9yCY47KGLBBOggpEIWwJuDSr/HNodwcwlAahQebUO/quLGbbgIfAp9dqebc9mQ==}
+  '@tanstack/start@1.76.2':
+    resolution: {integrity: sha512-gGJeKwwGzq3rjsegzDMgDHxZZJKA0UWMsmf/weW8TInkKmgZzu0fBqlwCkpbRoMBXvJ3U1jXfBoHPqJgWcWRlg==}
     engines: {node: '>=12'}
     peerDependencies:
       react: '>=18.0.0 || >=19.0.0'
@@ -2747,8 +2756,8 @@ packages:
   electron-to-chromium@1.5.41:
     resolution: {integrity: sha512-dfdv/2xNjX0P8Vzme4cfzHqnPm5xsZXwsolTYr0eyW18IUmNyG08vL+fttvinTfhKfIKdRoqkDIC9e9iWQCNYQ==}
 
-  electron-to-chromium@1.5.42:
-    resolution: {integrity: sha512-gIfKavKDw1mhvic9nbzA5lZw8QSHpdMwLwXc0cWidQz9B15pDoDdDH4boIatuFfeoCatb3a/NGL6CYRVFxGZ9g==}
+  electron-to-chromium@1.5.45:
+    resolution: {integrity: sha512-vOzZS6uZwhhbkZbcRyiy99Wg+pYFV5hk+5YaECvx0+Z31NR3Tt5zS6dze2OepT6PCTzVzT0dIJItti+uAW5zmw==}
 
   emoji-regex@10.4.0:
     resolution: {integrity: sha512-EC+0oUMY1Rqm4O6LLrgjtYDvcVYTy7chDnM4Q7030tP4Kwj3u/pR6gP9ygnp2CJMK5Gq+9Q2oqmrFJAz01DXjw==}
@@ -5629,7 +5638,7 @@ snapshots:
 
   '@babel/highlight@7.25.7':
     dependencies:
-      '@babel/helper-validator-identifier': 7.25.7
+      '@babel/helper-validator-identifier': 7.25.9
       chalk: 2.4.2
       js-tokens: 4.0.0
       picocolors: 1.1.1
@@ -6770,7 +6779,7 @@ snapshots:
 
   '@rollup/plugin-commonjs@25.0.8(rollup@4.24.0)':
     dependencies:
-      '@rollup/pluginutils': 5.1.2(rollup@4.24.0)
+      '@rollup/pluginutils': 5.1.3(rollup@4.24.0)
       commondir: 1.0.1
       estree-walker: 2.0.2
       glob: 8.1.0
@@ -6781,7 +6790,7 @@ snapshots:
 
   '@rollup/plugin-inject@5.0.5(rollup@4.24.0)':
     dependencies:
-      '@rollup/pluginutils': 5.1.2(rollup@4.24.0)
+      '@rollup/pluginutils': 5.1.3(rollup@4.24.0)
       estree-walker: 2.0.2
       magic-string: 0.30.12
     optionalDependencies:
@@ -6789,13 +6798,13 @@ snapshots:
 
   '@rollup/plugin-json@6.1.0(rollup@4.24.0)':
     dependencies:
-      '@rollup/pluginutils': 5.1.2(rollup@4.24.0)
+      '@rollup/pluginutils': 5.1.3(rollup@4.24.0)
     optionalDependencies:
       rollup: 4.24.0
 
   '@rollup/plugin-node-resolve@15.3.0(rollup@2.79.2)':
     dependencies:
-      '@rollup/pluginutils': 5.1.2(rollup@2.79.2)
+      '@rollup/pluginutils': 5.1.3(rollup@2.79.2)
       '@types/resolve': 1.20.2
       deepmerge: 4.3.1
       is-module: 1.0.0
@@ -6805,7 +6814,7 @@ snapshots:
 
   '@rollup/plugin-node-resolve@15.3.0(rollup@4.24.0)':
     dependencies:
-      '@rollup/pluginutils': 5.1.2(rollup@4.24.0)
+      '@rollup/pluginutils': 5.1.3(rollup@4.24.0)
       '@types/resolve': 1.20.2
       deepmerge: 4.3.1
       is-module: 1.0.0
@@ -6821,7 +6830,7 @@ snapshots:
 
   '@rollup/plugin-replace@5.0.7(rollup@4.24.0)':
     dependencies:
-      '@rollup/pluginutils': 5.1.2(rollup@4.24.0)
+      '@rollup/pluginutils': 5.1.3(rollup@4.24.0)
       magic-string: 0.30.12
     optionalDependencies:
       rollup: 4.24.0
@@ -6854,19 +6863,27 @@ snapshots:
       estree-walker: 2.0.2
       picomatch: 2.3.1
 
-  '@rollup/pluginutils@5.1.2(rollup@2.79.2)':
-    dependencies:
-      '@types/estree': 1.0.6
-      estree-walker: 2.0.2
-      picomatch: 2.3.1
-    optionalDependencies:
-      rollup: 2.79.2
-
   '@rollup/pluginutils@5.1.2(rollup@4.24.0)':
     dependencies:
       '@types/estree': 1.0.6
       estree-walker: 2.0.2
       picomatch: 2.3.1
+    optionalDependencies:
+      rollup: 4.24.0
+
+  '@rollup/pluginutils@5.1.3(rollup@2.79.2)':
+    dependencies:
+      '@types/estree': 1.0.6
+      estree-walker: 2.0.2
+      picomatch: 4.0.2
+    optionalDependencies:
+      rollup: 2.79.2
+
+  '@rollup/pluginutils@5.1.3(rollup@4.24.0)':
+    dependencies:
+      '@types/estree': 1.0.6
+      estree-walker: 2.0.2
+      picomatch: 4.0.2
     optionalDependencies:
       rollup: 4.24.0
 
@@ -7036,7 +7053,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@tanstack/start@1.76.1(@types/node@22.7.9)(ioredis@5.4.1)(magicast@0.3.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(terser@5.36.0)(vite@5.4.10(@types/node@22.7.9)(terser@5.36.0))':
+  '@tanstack/start@1.76.2(@types/node@22.7.9)(ioredis@5.4.1)(magicast@0.3.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(terser@5.36.0)(vite@5.4.10(@types/node@22.7.9)(terser@5.36.0))':
     dependencies:
       '@tanstack/react-cross-context': 1.74.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@tanstack/react-router': 1.76.1(@tanstack/router-generator@1.74.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -7109,16 +7126,16 @@ snapshots:
 
   '@types/babel__generator@7.6.8':
     dependencies:
-      '@babel/types': 7.25.8
+      '@babel/types': 7.25.9
 
   '@types/babel__template@7.4.4':
     dependencies:
-      '@babel/parser': 7.25.8
-      '@babel/types': 7.25.8
+      '@babel/parser': 7.25.9
+      '@babel/types': 7.25.9
 
   '@types/babel__traverse@7.20.6':
     dependencies:
-      '@babel/types': 7.25.8
+      '@babel/types': 7.25.9
 
   '@types/braces@3.0.4': {}
 
@@ -7671,7 +7688,7 @@ snapshots:
   browserslist@4.24.2:
     dependencies:
       caniuse-lite: 1.0.30001669
-      electron-to-chromium: 1.5.42
+      electron-to-chromium: 1.5.45
       node-releases: 2.0.18
       update-browserslist-db: 1.1.1(browserslist@4.24.2)
 
@@ -8045,7 +8062,7 @@ snapshots:
 
   electron-to-chromium@1.5.41: {}
 
-  electron-to-chromium@1.5.42: {}
+  electron-to-chromium@1.5.45: {}
 
   emoji-regex@10.4.0: {}
 
@@ -9552,7 +9569,7 @@ snapshots:
       '@rollup/plugin-node-resolve': 15.3.0(rollup@4.24.0)
       '@rollup/plugin-replace': 5.0.7(rollup@4.24.0)
       '@rollup/plugin-terser': 0.4.4(rollup@4.24.0)
-      '@rollup/pluginutils': 5.1.2(rollup@4.24.0)
+      '@rollup/pluginutils': 5.1.3(rollup@4.24.0)
       '@types/http-proxy': 1.17.15
       '@vercel/nft': 0.26.5
       archiver: 7.0.1
@@ -10862,7 +10879,7 @@ snapshots:
 
   unimport@3.13.1(rollup@4.24.0):
     dependencies:
-      '@rollup/pluginutils': 5.1.2(rollup@4.24.0)
+      '@rollup/pluginutils': 5.1.3(rollup@4.24.0)
       acorn: 8.13.0
       escape-string-regexp: 5.0.0
       estree-walker: 3.0.3
