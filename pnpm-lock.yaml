@@ -34,7 +34,7 @@ importers:
         version: 1.78.0(vite@5.4.10(@types/node@22.8.6)(terser@5.36.0))
       '@tanstack/start':
         specifier: ^1.57.18
-        version: 1.78.0(@types/node@22.8.6)(ioredis@5.4.1)(magicast@0.3.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(terser@5.36.0)(vite@5.4.10(@types/node@22.8.6)(terser@5.36.0))
+        version: 1.78.1(@types/node@22.8.6)(ioredis@5.4.1)(magicast@0.3.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(terser@5.36.0)(vite@5.4.10(@types/node@22.8.6)(terser@5.36.0))
       app-root-path:
         specifier: ^3.1.0
         version: 3.1.0
@@ -1898,8 +1898,8 @@ packages:
     resolution: {integrity: sha512-b1oGORk+NEqMpNdOOY4fDOqfGXCb+LGwMc11wR3kdpGM2DGqAJAjrXKRPRRDF0l2szY2p3di82VfgTeOcg63jA==}
     engines: {node: '>=12'}
 
-  '@tanstack/start@1.78.0':
-    resolution: {integrity: sha512-1MxJlyTXmg4oIihtkq+7vNKPcmUH4Mfw7PgM7OELmwi+6jcgt7hauUS2aKMBRf16FyKAZxYLFHA9XNZaaevAIQ==}
+  '@tanstack/start@1.78.1':
+    resolution: {integrity: sha512-Aody641GUCdVCXSGC4MbyX/r5eyyJA5Qf6NvdBBffsn/0VUDDV9pi+ZAS6ZrybaM7KOrKck/YEN4FWwWrzik+A==}
     engines: {node: '>=12'}
     peerDependencies:
       react: '>=18.0.0 || >=19.0.0'
@@ -2437,10 +2437,6 @@ packages:
   chokidar@3.6.0:
     resolution: {integrity: sha512-7VT13fmjotKpGipCW9JEQAusEPE+Ei8nl6/g4FBAmIm0GOOLMua9NDDo/DWp0ZAxCr3cPq5ZpBqmPAQgDda2Pw==}
     engines: {node: '>= 8.10.0'}
-
-  chokidar@4.0.1:
-    resolution: {integrity: sha512-n8enUVCED/KVRQlab1hr3MVpcVMvxtZjmEa956u+4YijlmQED223XMSYj2tLuKvr4jcCTzNNMpQDUer72MMmzA==}
-    engines: {node: '>= 14.16.0'}
 
   chownr@1.1.4:
     resolution: {integrity: sha512-jJ0bqzaylmJtVnNgzTeSOs8DPavpbYgEr/b0YL8/2GO3xJEhInFmhKMUnEJQjZumK7KXGFhUy89PrsJWlakBVg==}
@@ -3540,8 +3536,8 @@ packages:
     resolution: {integrity: sha512-2yTgeWTWzMWkHu6Jp9NKgePDaYHbntiwvYuuJLbbN9vl7DC9DvXKOB2BC3ZZ92D3cvV/aflH0osDfwpHepQ53w==}
     hasBin: true
 
-  jiti@2.3.3:
-    resolution: {integrity: sha512-EX4oNDwcXSivPrw2qKH2LB5PoFxEvgtv2JgwW0bU858HoLQ+kutSvjLMUqBd0PeJYEinLWhoI9Ol0eYMqj/wNQ==}
+  jiti@2.4.0:
+    resolution: {integrity: sha512-H5UpaUI+aHOqZXlYOaFP/8AzKsg+guWu+Pr3Y8i7+Y3zr1aXAvCvTAQ1RxSc6oVD8R8c7brgNtTVP91E7upH/g==}
     hasBin: true
 
   joycon@3.1.1:
@@ -4349,10 +4345,6 @@ packages:
     resolution: {integrity: sha512-hOS089on8RduqdbhvQ5Z37A0ESjsqz6qnRcffsMU3495FuTdqSm+7bhJ29JvIOsBDEEnan5DPu9t3To9VRlMzA==}
     engines: {node: '>=8.10.0'}
 
-  readdirp@4.0.2:
-    resolution: {integrity: sha512-yDMz9g+VaZkqBYS/ozoBJwaBhTbZo3UNYQHNRw1D3UFQB8oHB4uS/tAODO+ZLjGWmUbKnIlOWO+aaIiAxrUWHA==}
-    engines: {node: '>= 14.16.0'}
-
   real-require@0.2.0:
     resolution: {integrity: sha512-57frrGM/OCTLqLOAh0mhVA9VBMHd+9U7Zb2THMGdBUoZVOtGbJzjxsYGDJ3A9AYYCP4hn6y1TVbaOfzWtm5GFg==}
     engines: {node: '>= 12.13.0'}
@@ -5046,8 +5038,8 @@ packages:
       webpack-sources:
         optional: true
 
-  unstorage@1.13.0:
-    resolution: {integrity: sha512-nrUXbFW00q8SqrJSgyyZ7OhNK1ugAF1wmOJu4V90Ww0V5b3CJSlcZt/V6D+2DktCuBZAoIcSIsn6gifwi8JgnQ==}
+  unstorage@1.13.1:
+    resolution: {integrity: sha512-ELexQHUrG05QVIM/iUeQNdl9FXDZhqLJ4yP59fnmn2jGUh0TEulwOgov1ubOb3Gt2ZGK/VMchJwPDNVEGWQpRg==}
     peerDependencies:
       '@azure/app-configuration': ^1.7.0
       '@azure/cosmos': ^4.1.1
@@ -7034,7 +7026,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@tanstack/start@1.78.0(@types/node@22.8.6)(ioredis@5.4.1)(magicast@0.3.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(terser@5.36.0)(vite@5.4.10(@types/node@22.8.6)(terser@5.36.0))':
+  '@tanstack/start@1.78.1(@types/node@22.8.6)(ioredis@5.4.1)(magicast@0.3.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(terser@5.36.0)(vite@5.4.10(@types/node@22.8.6)(terser@5.36.0))':
     dependencies:
       '@tanstack/react-cross-context': 1.74.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@tanstack/react-router': 1.78.0(@tanstack/router-generator@1.78.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -7747,10 +7739,6 @@ snapshots:
       readdirp: 3.6.0
     optionalDependencies:
       fsevents: 2.3.3
-
-  chokidar@4.0.1:
-    dependencies:
-      readdirp: 4.0.2
 
   chownr@1.1.4: {}
 
@@ -8945,7 +8933,7 @@ snapshots:
 
   jiti@1.21.6: {}
 
-  jiti@2.3.3: {}
+  jiti@2.4.0: {}
 
   joycon@3.1.1: {}
 
@@ -9032,7 +9020,7 @@ snapshots:
       get-port-please: 3.1.2
       h3: 1.13.0
       http-shutdown: 1.2.2
-      jiti: 2.3.3
+      jiti: 2.4.0
       mlly: 1.7.2
       node-forge: 1.3.1
       pathe: 1.1.2
@@ -9582,7 +9570,7 @@ snapshots:
       unctx: 2.3.1
       unenv: 1.10.0
       unimport: 3.13.1(rollup@4.24.3)
-      unstorage: 1.13.0(ioredis@5.4.1)
+      unstorage: 1.13.1(ioredis@5.4.1)
       unwasm: 0.3.9
     transitivePeerDependencies:
       - '@azure/app-configuration'
@@ -10023,8 +10011,6 @@ snapshots:
   readdirp@3.6.0:
     dependencies:
       picomatch: 2.3.1
-
-  readdirp@4.0.2: {}
 
   real-require@0.2.0: {}
 
@@ -10916,10 +10902,10 @@ snapshots:
       acorn: 8.14.0
       webpack-virtual-modules: 0.6.2
 
-  unstorage@1.13.0(ioredis@5.4.1):
+  unstorage@1.13.1(ioredis@5.4.1):
     dependencies:
       anymatch: 3.1.3
-      chokidar: 4.0.1
+      chokidar: 3.6.0
       citty: 0.1.6
       destr: 2.0.3
       h3: 1.13.0
@@ -11023,7 +11009,7 @@ snapshots:
       ufo: 1.5.4
       unctx: 2.3.1
       unenv: 1.10.0
-      unstorage: 1.13.0(ioredis@5.4.1)
+      unstorage: 1.13.1(ioredis@5.4.1)
       vite: 5.4.10(@types/node@22.8.6)(terser@5.36.0)
       zod: 3.23.8
     transitivePeerDependencies:
