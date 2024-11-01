@@ -25,16 +25,16 @@ importers:
         version: 1.74.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@tanstack/react-router':
         specifier: ^1.57.18
-        version: 1.77.9(@tanstack/router-generator@1.77.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 1.77.10(@tanstack/router-generator@1.77.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@tanstack/router-devtools':
         specifier: ^1.57.18
-        version: 1.77.9(@tanstack/react-router@1.77.9(@tanstack/router-generator@1.77.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(csstype@3.1.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 1.77.10(@tanstack/react-router@1.77.10(@tanstack/router-generator@1.77.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(csstype@3.1.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@tanstack/router-vite-plugin':
         specifier: ^1.57.15
         version: 1.77.7(vite@5.4.10(@types/node@22.8.6)(terser@5.36.0))
       '@tanstack/start':
         specifier: ^1.57.18
-        version: 1.77.9(@types/node@22.8.6)(ioredis@5.4.1)(magicast@0.3.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(terser@5.36.0)(vite@5.4.10(@types/node@22.8.6)(terser@5.36.0))
+        version: 1.77.10(@types/node@22.8.6)(ioredis@5.4.1)(magicast@0.3.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(terser@5.36.0)(vite@5.4.10(@types/node@22.8.6)(terser@5.36.0))
       app-root-path:
         specifier: ^3.1.0
         version: 3.1.0
@@ -1842,8 +1842,8 @@ packages:
       react: '>=18'
       react-dom: '>=18'
 
-  '@tanstack/react-router@1.77.9':
-    resolution: {integrity: sha512-m4fofUZT7d/fXUHIZ9+VUO4SJ9d+RxUE4HagnHLvoaR/gTaeRgXXdQjwSxg7uzzT27lScuvoroo/g1dUAJVCgA==}
+  '@tanstack/react-router@1.77.10':
+    resolution: {integrity: sha512-LhIloQb8jarVoZQki1kpIFKIisL4IEgojbiF+kflU1FxykW9a+brV3eh7djA2eDFK5ptB9oH2k/ucx654Eg9Og==}
     engines: {node: '>=12'}
     peerDependencies:
       '@tanstack/router-generator': 1.77.7
@@ -1859,11 +1859,11 @@ packages:
       react: ^17.0.0 || ^18.0.0
       react-dom: ^17.0.0 || ^18.0.0
 
-  '@tanstack/router-devtools@1.77.9':
-    resolution: {integrity: sha512-KdbBO+shb6eW3rJIQxgYbsxwGm2JD5pcweiznHmBAGQCSr5ZtJZzKctGqTn/KOhecP458751PeVI24eA55S6aw==}
+  '@tanstack/router-devtools@1.77.10':
+    resolution: {integrity: sha512-5zRbiu/hXcYVS2aHsRmRxAv905J2cPixxBZak5GIBhP1NGrW+P4wi12OXXjFsPot6Z0sQQWJQUx7aiNQVkHiyQ==}
     engines: {node: '>=12'}
     peerDependencies:
-      '@tanstack/react-router': ^1.77.9
+      '@tanstack/react-router': ^1.77.10
       react: '>=18'
       react-dom: '>=18'
 
@@ -1894,8 +1894,8 @@ packages:
     resolution: {integrity: sha512-b1oGORk+NEqMpNdOOY4fDOqfGXCb+LGwMc11wR3kdpGM2DGqAJAjrXKRPRRDF0l2szY2p3di82VfgTeOcg63jA==}
     engines: {node: '>=12'}
 
-  '@tanstack/start@1.77.9':
-    resolution: {integrity: sha512-myqnSKgwfGw9m4q8+oWjmpVGQ5LARx5du/Xcbt2y9g6uFjmaXo6dBTmFqmle/H1DMALJ7qQI9m6t22wi8mi40Q==}
+  '@tanstack/start@1.77.10':
+    resolution: {integrity: sha512-DeJ4dOIdCWHXsiG/8vc+S8C4gJRBQqMehA2SA2G7ZKZDNN+C7IF831NiVhUjsSL2QYks/bXniE14A9GqdBtsJw==}
     engines: {node: '>=12'}
     peerDependencies:
       react: '>=18.0.0 || >=19.0.0'
@@ -4906,6 +4906,9 @@ packages:
   tslib@2.8.0:
     resolution: {integrity: sha512-jWVzBLplnCmoaTr13V9dYbiQ99wvZRd0vNWaDRg+aVYRcjDF3nDksxFDE/+fkXnKhpnUUkmx5pK/v8mCtLVqZA==}
 
+  tslib@2.8.1:
+    resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
+
   tsx@4.19.2:
     resolution: {integrity: sha512-pOUl6Vo2LUq/bSa8S5q7b91cgNSjctn9ugq/+Mvow99qW6x/UZYwzxy/3NmqoT66eHYfCVvFvACC58UBPFf28g==}
     engines: {node: '>=18.0.0'}
@@ -6932,7 +6935,7 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@tanstack/react-router@1.77.9(@tanstack/router-generator@1.77.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@tanstack/react-router@1.77.10(@tanstack/router-generator@1.77.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@tanstack/history': 1.61.1
       '@tanstack/react-store': 0.5.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -6950,9 +6953,9 @@ snapshots:
       react-dom: 18.3.1(react@18.3.1)
       use-sync-external-store: 1.2.2(react@18.3.1)
 
-  '@tanstack/router-devtools@1.77.9(@tanstack/react-router@1.77.9(@tanstack/router-generator@1.77.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(csstype@3.1.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@tanstack/router-devtools@1.77.10(@tanstack/react-router@1.77.10(@tanstack/router-generator@1.77.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(csstype@3.1.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@tanstack/react-router': 1.77.9(@tanstack/router-generator@1.77.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@tanstack/react-router': 1.77.10(@tanstack/router-generator@1.77.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       clsx: 2.1.1
       goober: 2.1.16(csstype@3.1.3)
       react: 18.3.1
@@ -7021,10 +7024,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@tanstack/start@1.77.9(@types/node@22.8.6)(ioredis@5.4.1)(magicast@0.3.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(terser@5.36.0)(vite@5.4.10(@types/node@22.8.6)(terser@5.36.0))':
+  '@tanstack/start@1.77.10(@types/node@22.8.6)(ioredis@5.4.1)(magicast@0.3.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(terser@5.36.0)(vite@5.4.10(@types/node@22.8.6)(terser@5.36.0))':
     dependencies:
       '@tanstack/react-cross-context': 1.74.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@tanstack/react-router': 1.77.9(@tanstack/router-generator@1.77.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@tanstack/react-router': 1.77.10(@tanstack/router-generator@1.77.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@tanstack/router-generator': 1.77.7
       '@tanstack/router-plugin': 1.77.7(vite@5.4.10(@types/node@22.8.6)(terser@5.36.0))
       '@tanstack/start-vite-plugin': 1.77.7
@@ -7256,7 +7259,7 @@ snapshots:
       astring: 1.9.0
       magicast: 0.2.11
       recast: 0.23.9
-      tslib: 2.8.0
+      tslib: 2.8.1
       vinxi: 0.4.3(@types/node@22.8.6)(ioredis@5.4.1)(magicast@0.3.5)(terser@5.36.0)
 
   '@vinxi/react-server-dom@0.0.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@5.4.10(@types/node@22.8.6)(terser@5.36.0))':
@@ -7511,7 +7514,7 @@ snapshots:
 
   ast-types@0.16.1:
     dependencies:
-      tslib: 2.8.0
+      tslib: 2.8.1
 
   astring@1.9.0: {}
 
@@ -10021,7 +10024,7 @@ snapshots:
       esprima: 4.0.1
       source-map: 0.6.1
       tiny-invariant: 1.3.3
-      tslib: 2.8.0
+      tslib: 2.8.1
 
   recma-build-jsx@1.0.0:
     dependencies:
@@ -10725,6 +10728,8 @@ snapshots:
       tslib: 2.8.0
 
   tslib@2.8.0: {}
+
+  tslib@2.8.1: {}
 
   tsx@4.19.2:
     dependencies:
