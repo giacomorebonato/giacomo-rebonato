@@ -122,7 +122,7 @@ importers:
         version: 15.12.0
       html-validate:
         specifier: ^8.22.0
-        version: 8.24.2(vitest@2.1.4(@types/node@22.9.0)(terser@5.36.0))
+        version: 8.25.0(vitest@2.1.4(@types/node@22.9.0)(terser@5.36.0))
       husky:
         specifier: ^9.1.6
         version: 9.1.6
@@ -2735,6 +2735,10 @@ packages:
     resolution: {integrity: sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w==}
     engines: {node: '>= 8'}
 
+  cross-spawn@7.0.5:
+    resolution: {integrity: sha512-ZVJrKKYunU38/76t0RMOulHOnUcbU9GbpWKAOZ0mhjr7CX6FVrH+4FrAapSOekrgFQ3f/8gwMEuIft0aKq6Hug==}
+    engines: {node: '>= 8'}
+
   crossws@0.2.4:
     resolution: {integrity: sha512-DAxroI2uSOgUKLz00NX6A8U/8EE3SZHmIND+10jkVSaypvyt57J5JEOxAQOL6lQxyzi/wZbTIwssU1uy69h5Vg==}
     peerDependencies:
@@ -3397,8 +3401,8 @@ packages:
   html-escaper@2.0.2:
     resolution: {integrity: sha512-H2iMtd0I4Mt5eYiapRdIDjp+XzelXQ0tFE4JS7YFwFevXXMmOp9myNrUvCg0D6ws8iqkRPBfKHgbwig1SmlLfg==}
 
-  html-validate@8.24.2:
-    resolution: {integrity: sha512-PpZLlH3gpOSBLRBID4QovOyZ97Ka5dCIhHMPjUxQlMGqk5pc+mgG5enCXbC8ngdjG0jpkTvM8AMhnPv1EiU9Pw==}
+  html-validate@8.25.0:
+    resolution: {integrity: sha512-ZMQcxHxQJ7vrj8o9mKGexkCBENfuyXSZOeBop2CanbbyeBgHwKhIKhksmc2TmhT8+chi657O+XqdDWZLAhMCJA==}
     engines: {node: '>= 16.14'}
     hasBin: true
     peerDependencies:
@@ -8155,6 +8159,12 @@ snapshots:
       shebang-command: 2.0.0
       which: 2.0.2
 
+  cross-spawn@7.0.5:
+    dependencies:
+      path-key: 3.1.1
+      shebang-command: 2.0.0
+      which: 2.0.2
+
   crossws@0.2.4: {}
 
   crossws@0.3.1:
@@ -8695,7 +8705,7 @@ snapshots:
 
   foreground-child@3.3.0:
     dependencies:
-      cross-spawn: 7.0.3
+      cross-spawn: 7.0.5
       signal-exit: 4.1.0
 
   forwarded@0.2.0: {}
@@ -8978,7 +8988,7 @@ snapshots:
 
   html-escaper@2.0.2: {}
 
-  html-validate@8.24.2(vitest@2.1.4(@types/node@22.9.0)(terser@5.36.0)):
+  html-validate@8.25.0(vitest@2.1.4(@types/node@22.9.0)(terser@5.36.0)):
     dependencies:
       '@html-validate/stylish': 4.2.0
       '@sidvind/better-ajv-errors': 3.0.1(ajv@8.17.1)
