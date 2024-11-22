@@ -34,7 +34,7 @@ importers:
         version: 1.81.9(vite@5.4.11(@types/node@22.9.1)(terser@5.36.0))
       '@tanstack/start':
         specifier: ^1.57.18
-        version: 1.82.5(@types/node@22.9.1)(ioredis@5.4.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(terser@5.36.0)(typescript@5.6.3)(vite@5.4.11(@types/node@22.9.1)(terser@5.36.0))
+        version: 1.82.6(@types/node@22.9.1)(ioredis@5.4.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(terser@5.36.0)(typescript@5.6.3)(vite@5.4.11(@types/node@22.9.1)(terser@5.36.0))
       app-root-path:
         specifier: ^3.1.0
         version: 3.1.0
@@ -2041,8 +2041,8 @@ packages:
     resolution: {integrity: sha512-+/gnK3gup36y6ivkfrewsAwM4hpSzrTCsmUPWGQl3XvPW+vM+tveRui7Up41Hn+zPeC6IFSP5SQX0Zusqs7DnA==}
     engines: {node: '>=12'}
 
-  '@tanstack/start@1.82.5':
-    resolution: {integrity: sha512-JCK37uMP2egfIuVXlE++aOhGvbneg6MTi+/SgdcAeYlB8Y0lPTtrvccS4JeKsXatj1vWu8W6ug8DurwsQsdM+A==}
+  '@tanstack/start@1.82.6':
+    resolution: {integrity: sha512-y0aAOas0Rb8SlnJwif/npvT4SmDWgtbuHgC83K0uFYnF7YvF63z5DU9LBhFmjc7PjPgiKVbPQQMKOsxLp+Z6gA==}
     engines: {node: '>=12'}
     peerDependencies:
       react: '>=18.0.0 || >=19.0.0'
@@ -3762,8 +3762,8 @@ packages:
   js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
 
-  js-tokens@9.0.0:
-    resolution: {integrity: sha512-WriZw1luRMlmV3LGJaR6QOJjWwgLUTf89OwT2lUOyjX2dJGBwgmIkbcz+7WFZjrZM635JOIR517++e/67CP9dQ==}
+  js-tokens@9.0.1:
+    resolution: {integrity: sha512-mxa9E9ITFOt0ban3j6L5MpjwegGz6lBQmM1IJkWeBZGcMxto50+eWdjC/52xDbS2vy0k7vIMK0Fe2wfL9OQSpQ==}
 
   js-yaml@4.1.0:
     resolution: {integrity: sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==}
@@ -7350,7 +7350,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@tanstack/start@1.82.5(@types/node@22.9.1)(ioredis@5.4.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(terser@5.36.0)(typescript@5.6.3)(vite@5.4.11(@types/node@22.9.1)(terser@5.36.0))':
+  '@tanstack/start@1.82.6(@types/node@22.9.1)(ioredis@5.4.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(terser@5.36.0)(typescript@5.6.3)(vite@5.4.11(@types/node@22.9.1)(terser@5.36.0))':
     dependencies:
       '@tanstack/react-cross-context': 1.81.9(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@tanstack/react-router': 1.82.2(@tanstack/router-generator@1.81.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -9348,7 +9348,7 @@ snapshots:
 
   js-tokens@4.0.0: {}
 
-  js-tokens@9.0.0: {}
+  js-tokens@9.0.1: {}
 
   js-yaml@4.1.0:
     dependencies:
@@ -10987,7 +10987,7 @@ snapshots:
 
   strip-literal@2.1.0:
     dependencies:
-      js-tokens: 9.0.0
+      js-tokens: 9.0.1
 
   style-to-object@0.4.4:
     dependencies:
