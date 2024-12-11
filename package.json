@@ -63,7 +63,7 @@
 		"html-validate": "^8.22.0",
 		"husky": "^9.1.6",
 		"lint-staged": "^15.2.10",
-		"npm-run-all2": "^6.2.3",
+		"npm-run-all2": "^7.0.0",
 		"pino-pretty": "^11.2.2",
 		"postcss": "^8.4.47",
 		"sharp": "^0.33.5",
