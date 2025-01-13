@@ -64,7 +64,7 @@
 		"husky": "^9.1.6",
 		"lint-staged": "^15.2.10",
 		"npm-run-all2": "^6.2.3",
-		"pino-pretty": "^11.2.2",
+		"pino-pretty": "^13.0.0",
 		"postcss": "^8.4.47",
 		"sharp": "^0.33.5",
 		"tailwindcss": "^3.4.12",
