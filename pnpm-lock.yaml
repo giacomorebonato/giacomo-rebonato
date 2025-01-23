@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@apollo/client':
         specifier: ^3.11.8
-        version: 3.12.6(@types/react@18.3.18)(graphql@16.10.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 3.12.7(@types/react@18.3.18)(graphql@16.10.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@fastify/static':
         specifier: ^8.0.0
         version: 8.0.4
@@ -182,8 +182,8 @@ packages:
     peerDependencies:
       ajv: '>=8'
 
-  '@apollo/client@3.12.6':
-    resolution: {integrity: sha512-MOEtkojZagMKB7nxlwQ426eaBYwEs/Xfn+JeLOd81wv6j7toKo57eEGAbJdZwyXGRgtiqDkX5gx3EzE7qtarXA==}
+  '@apollo/client@3.12.7':
+    resolution: {integrity: sha512-c0LSzS3tmJ06WSyNxsTHlfc4OLLYDnWtN+zkRjMQ80KCcp89sEpNgZP5ZCXdt2pUwUqOAvZFKJW7L8tolDzkrw==}
     peerDependencies:
       graphql: ^15.0.0 || ^16.0.0
       graphql-ws: ^5.5.5
@@ -2330,6 +2330,10 @@ packages:
     resolution: {integrity: sha512-LElXdjswlqjWrPpJFg1Fx4wpkOCxj1TDHlSV4PlaRxHGWko024xICaa97ZkMfs6DRKlCguiAI+rbXv5GWwXIkg==}
     hasBin: true
 
+  async-function@1.0.0:
+    resolution: {integrity: sha512-hsU18Ae8CDTR6Kgu9DYf0EbCr/a5iGL0rytQDobUcdpYOKokk8LEjVphnXkDkgpi0wYVsqrXuP0bZxJaTqdgoA==}
+    engines: {node: '>= 0.4'}
+
   async-sema@3.1.1:
     resolution: {integrity: sha512-tLRNUXati5MFePdAk8dw7Qt7DpxPB60ofAgn8WRhW6a2rcimZnYBP9oxHiv0OHy+Wz7kPMG+t4LGdt31+4EmGg==}
 
@@ -3438,8 +3442,8 @@ packages:
   is-arrayish@0.3.2:
     resolution: {integrity: sha512-eVRqCvVlZbuw3GrM63ovNSNAeA1K16kaR/LRY/92w0zxQ5/1YzwblUX652i4Xs9RwAGjW9d9y6X88t8OaAJfWQ==}
 
-  is-async-function@2.1.0:
-    resolution: {integrity: sha512-GExz9MtyhlZyXYLxzlJRj5WUCE661zhDa1Yna52CN57AJsymh+DvXXjyveSioqSRdxvUrdKdvqB1b5cVKsNpWQ==}
+  is-async-function@2.1.1:
+    resolution: {integrity: sha512-9dgM/cZBnNvjzaMYHVoxxfPj2QXt22Ev7SuuPrs+xav0ukGB0S6d4ydZdEiM48kLx5kDV+QBPrpVnFyefL8kkQ==}
     engines: {node: '>= 0.4'}
 
   is-bigint@1.1.0:
@@ -5616,7 +5620,7 @@ snapshots:
       jsonpointer: 5.0.1
       leven: 3.1.0
 
-  '@apollo/client@3.12.6(@types/react@18.3.18)(graphql@16.10.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@apollo/client@3.12.7(@types/react@18.3.18)(graphql@16.10.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@graphql-typed-document-node/core': 3.2.0(graphql@16.10.0)
       '@wry/caches': 1.0.1
@@ -7838,6 +7842,8 @@ snapshots:
 
   astring@1.9.0: {}
 
+  async-function@1.0.0: {}
+
   async-sema@3.1.1: {}
 
   async@3.2.6: {}
@@ -9115,8 +9121,9 @@ snapshots:
 
   is-arrayish@0.3.2: {}
 
-  is-async-function@2.1.0:
+  is-async-function@2.1.1:
     dependencies:
+      async-function: 1.0.0
       call-bound: 1.0.3
       get-proto: 1.0.1
       has-tostringtag: 1.0.2
@@ -11627,7 +11634,7 @@ snapshots:
       call-bound: 1.0.3
       function.prototype.name: 1.1.8
       has-tostringtag: 1.0.2
-      is-async-function: 2.1.0
+      is-async-function: 2.1.1
       is-date-object: 1.1.0
       is-finalizationregistry: 1.1.1
       is-generator-function: 1.1.0
