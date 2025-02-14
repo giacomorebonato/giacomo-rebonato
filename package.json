@@ -60,7 +60,7 @@
 		"daisyui": "^4.12.10",
 		"del-cli": "^6.0.0",
 		"globals": "^15.9.0",
-		"html-validate": "^8.22.0",
+		"html-validate": "^9.0.0",
 		"husky": "^9.1.6",
 		"lint-staged": "^15.2.10",
 		"npm-run-all2": "^6.2.3",
