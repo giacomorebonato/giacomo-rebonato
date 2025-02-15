@@ -9,7 +9,7 @@ COPY ./ ./
 RUN pnpm i
 RUN pnpm dlx playwright install --with-deps chromium
 RUN node --run build
-RUN rm -rf frontend tests
+RUN rm -rf frontend
 RUN pnpm prune --production --config.ignore-scripts=true
 
 EXPOSE 3000
