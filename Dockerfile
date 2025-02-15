@@ -1,4 +1,4 @@
-FROM node:22 as build
+FROM node:23-bookworm AS build
 
 RUN npm i pnpm@9 -g
 
@@ -6,17 +6,11 @@ WORKDIR /app
 
 COPY ./ ./
 
-ENV NODE_ENV development
-RUN pnpm i --frozen-lockfile --prod=false
-RUN pnpm build
+RUN pnpm i
+RUN pnpm dlx playwright install --with-deps chromium
+RUN node --run build
+RUN rm -rf frontend tests
 RUN pnpm prune --production --config.ignore-scripts=true
-RUN rm -rf src
-
-FROM node:22-alpine as run
-
-WORKDIR /app
-
-COPY --from=build /app .
 
 EXPOSE 3000
 

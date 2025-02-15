@@ -1,87 +1,27 @@
 {
+	"name": "fastivite",
+	"version": "1.0.0",
+	"description": "",
 	"scripts": {
-		"dev": "vavite serve --port 3000 | pino-pretty",
-		"build": "pnpm clean && vavite build",
-		"clean": "del dist coverage playwright-report",
-		"start": "NODE_ENV=production node dist/server/index.js",
-		"test": "run-p test:**",
-		"test:unit": "vitest run --coverage",
-		"test:types": "tsc",
-		"e2e": "CI=true playwright test",
-		"e2e:headed": "CI=true playwright test --headed",
-		"e2e:ui": "CI=true playwright test --ui",
-		"format:check": "biome check .",
-		"format": "biome check --write --unsafe .",
-		"generate-pwa-assets": "pwa-assets-generator",
-		"prepare": "husky",
-		"postinstall": "node --run build"
+		"clean": "rm -rf node_modules **/node_modules",
+		"format": "pnpm biome check --write",
+		"build": "rm -rf backend/dist && pnpm recursive run build",
+		"start": "pnpm -F backend start",
+		"dev": "PNPM_CLI_MAX_OUTPUT_LINES=20 pnpm -r run dev",
+		"test": "pnpm -r run test"
 	},
-	"imports": {
-		"#/*": "./src/*"
-	},
-	"dependencies": {
-		"@apollo/client": "^3.11.8",
-		"@fastify/static": "^8.0.0",
-		"@mdx-js/mdx": "^3.0.1",
-		"@mdx-js/react": "^3.0.1",
-		"@tanstack/react-cross-context": "^1.57.6",
-		"@tanstack/react-router": "^1.57.18",
-		"@tanstack/router-devtools": "^1.57.18",
-		"@tanstack/router-vite-plugin": "^1.57.15",
-		"@tanstack/start": "^1.57.18",
-		"app-root-path": "^3.1.0",
-		"clsx": "^2.1.1",
-		"dotenv": "^16.4.5",
-		"fastify": "5.2.1",
-		"fastify-plugin": "^5.0.0",
-		"isbot": "^5.1.17",
-		"jsesc": "^3.0.2",
-		"react": "^18.3.1",
-		"react-dom": "^18.3.1",
-		"react-helmet-async": "^2.0.5",
-		"zod": "^3.23.8"
-	},
-	"type": "module",
+	"keywords": ["fastify", "vite"],
+	"author": "Giacomo Rebonato",
+	"license": "MIT",
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
-		"@mdx-js/rollup": "^3.0.1",
-		"@playwright/test": "^1.47.1",
-		"@tailwindcss/typography": "^0.5.15",
-		"@types/jsesc": "^3.0.3",
-		"@types/mdx": "^2.0.13",
-		"@types/node": "^22.5.5",
-		"@types/react": "^18.3.7",
-		"@types/react-dom": "^18.3.0",
-		"@types/react-helmet": "^6.1.11",
-		"@vite-pwa/assets-generator": "^0.2.6",
-		"@vitejs/plugin-react": "^4.3.1",
-		"@vitest/coverage-v8": "^2.1.1",
-		"autoprefixer": "^10.4.20",
-		"daisyui": "^4.12.10",
-		"del-cli": "^6.0.0",
-		"globals": "^15.9.0",
-		"html-validate": "^8.22.0",
-		"husky": "^9.1.6",
-		"lint-staged": "^15.2.10",
-		"npm-run-all2": "^6.2.3",
-		"pino-pretty": "^11.2.2",
-		"postcss": "^8.4.47",
-		"sharp": "^0.33.5",
-		"tailwindcss": "^3.4.12",
-		"typescript": "^5.6.2",
-		"vavite": "^5.0.0",
-		"vite": "^5.4.6",
-		"vite-plugin-pwa": "^0.20.5",
-		"vitest": "^2.1.1",
-		"workbox-window": "^7.1.0"
+		"@types/node": "^22.10.2",
+		"lefthook": "^1.9.2",
+		"typescript": "~5.7.2"
 	},
-	"engines": {
-		"node": ">=22",
-		"pnpm": ">=9"
-	},
-	"lint-staged": {
-		"*": [
-			"biome check --write --no-errors-on-unmatched --files-ignore-unknown=true"
-		]
+	"pnpm": {
+		"overrides": {
+			"rollup": "npm:@rollup/wasm-node"
+		}
 	}
 }
