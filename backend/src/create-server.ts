@@ -1,6 +1,5 @@
 import { setTimeout } from 'node:timers/promises'
 import { fastify } from 'fastify'
-import { prerenderPlugin } from 'fastify-prerender-plugin'
 import type { Page1Response } from 'shared/types'
 
 export async function createServer() {
@@ -10,12 +9,6 @@ export async function createServer() {
 
 	await app
 		.register(import('./env-plugin.ts'))
-		.register(prerenderPlugin, {
-			urls: ['/'],
-			host: 'localhost',
-			port: 3_000,
-			tmpPath: '/htmlcache',
-		})
 		.register(import('./vite-plugin.ts'))
 
 	app.get<{
