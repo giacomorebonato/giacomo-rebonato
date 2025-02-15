@@ -8,7 +8,7 @@ import type { RouterContext } from '#/types/router-context'
 
 export const Route = createRootRouteWithContext<RouterContext>()({
 	loader({ context }) {
-		return { helmetContext: context.helmetContext }
+		return { helmetContext: context?.helmetContext }
 	},
 	component: RootComponent,
 })
@@ -23,7 +23,7 @@ function RootComponent() {
 	}>()
 
 	return (
-		<HelmetProvider context={loaderData.helmetContext}>
+		<HelmetProvider context={loaderData?.helmetContext}>
 			<CustomMeta />
 			<Outlet />
 			<DehydrateRouter />
