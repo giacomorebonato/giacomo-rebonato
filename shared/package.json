@@ -1,0 +1,13 @@
+{
+	"name": "shared",
+	"type": "module",
+	"version": "1.0.0",
+	"description": "",
+	"exports": {
+		"./helpers": "./src/helpers.ts",
+		"./types": "./src/types.ts"
+	},
+	"scripts": {
+		"test": "node --experimental-strip-types --test \"**/*.test.ts\""
+	}
+}
