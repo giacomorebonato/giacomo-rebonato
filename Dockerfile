@@ -1,5 +1,9 @@
 FROM node:23-alpine AS build
 
+ENV PNPM_HOME="/pnpm"
+ENV PATH="$PNPM_HOME:$PATH"
+RUN corepack enable
+
 RUN npm i pnpm@9 -g
 
 WORKDIR /app
