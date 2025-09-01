@@ -1,4 +1,4 @@
-FROM node:23-alpine AS build
+FROM node:24-alpine AS build
 
 RUN npm i pnpm -g
 
@@ -9,7 +9,7 @@ COPY ./ ./
 RUN pnpm i
 RUN node --run build
 RUN rm -rf frontend
-RUN pnpm prune --production --config.ignore-scripts=true
+# RUN pnpm prune --production --config.ignore-scripts=true
 
 EXPOSE 3000
 
