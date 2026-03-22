@@ -5,18 +5,19 @@
 	"license": "MIT",
 	"scripts": {
 		"dev": "bun --hot server.ts",
-		"start": "NODE_ENV=production bun server.ts",
+		"build:css": "bunx tailwindcss -i src/index.css -o src/styles.css",
+		"build": "bun run build:css && bun build --target=bun --production --outdir=dist ./server.ts",
+		"start": "cd dist && NODE_ENV=production bun server.js",
 		"test": "bun test",
 		"format": "bun biome check --write"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
+		"@tailwindcss/cli": "^4.2.2",
 		"@types/bun": "latest",
-		"lefthook": "^1.9.2"
-	},
-	"dependencies": {
 		"bun-plugin-tailwind": "^0.1.2",
 		"daisyui": "5.0.0-beta.8",
+		"lefthook": "^1.9.2",
 		"tailwindcss": "^4.0.6"
 	}
 }
