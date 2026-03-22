@@ -1,27 +1,22 @@
 {
 	"name": "giacomo-rebonato",
 	"version": "1.0.0",
-	"description": "",
-	"scripts": {
-		"clean": "rm -rf node_modules **/node_modules",
-		"format": "pnpm biome check --write",
-		"build": "rm -rf backend/dist && pnpm recursive run build",
-		"start": "pnpm -F backend start",
-		"dev": "PNPM_CLI_MAX_OUTPUT_LINES=20 pnpm -r run dev",
-		"test": "pnpm -r run test"
-	},
-	"keywords": ["fastify", "vite"],
 	"author": "Giacomo Rebonato",
 	"license": "MIT",
+	"scripts": {
+		"dev": "bun --hot server.ts",
+		"start": "NODE_ENV=production bun server.ts",
+		"test": "bun test",
+		"format": "bun biome check --write"
+	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
-		"@types/node": "^22.10.2",
+		"@types/bun": "latest",
+		"daisyui": "5.0.0-beta.8",
 		"lefthook": "^1.9.2",
-		"typescript": "~5.7.2"
+		"tailwindcss": "^4.0.6"
 	},
-	"pnpm": {
-		"overrides": {
-			"rollup": "npm:@rollup/wasm-node"
-		}
+	"dependencies": {
+		"bun-plugin-tailwind": "^0.1.2"
 	}
 }

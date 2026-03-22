@@ -1,10 +1,5 @@
 node_modules/
 dist/
-test-results/
-playwright-report/
-blob-report/
 .cache/
-chrome/
 .env
-.ci.env
-openapi-ts-error*
+.claude/settings.local.json

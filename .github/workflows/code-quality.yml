@@ -11,11 +11,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 23
-
       - name: Setup Biome CLI
         uses: biomejs/setup-biome@v2
 

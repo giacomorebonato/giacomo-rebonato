@@ -1,16 +1,13 @@
-FROM node:24-alpine AS build
-
-RUN npm i pnpm -g
+FROM oven/bun:1
 
 WORKDIR /app
 
-COPY ./ ./
+COPY package.json bun.lock* ./
+RUN bun install --frozen-lockfile --production
 
-RUN pnpm i
-RUN node --run build
-RUN rm -rf frontend
-# RUN pnpm prune --production --config.ignore-scripts=true
+COPY . .
 
 EXPOSE 3000
+ENV NODE_ENV=production
 
-CMD ["node", "--run", "start"]
+CMD ["bun", "server.ts"]
