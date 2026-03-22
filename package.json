@@ -12,11 +12,11 @@
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
 		"@types/bun": "latest",
-		"daisyui": "5.0.0-beta.8",
-		"lefthook": "^1.9.2",
-		"tailwindcss": "^4.0.6"
+		"lefthook": "^1.9.2"
 	},
 	"dependencies": {
-		"bun-plugin-tailwind": "^0.1.2"
+		"bun-plugin-tailwind": "^0.1.2",
+		"daisyui": "5.0.0-beta.8",
+		"tailwindcss": "^4.0.6"
 	}
 }
